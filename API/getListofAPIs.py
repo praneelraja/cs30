@@ -2,7 +2,7 @@ import requests,json
 
 from html.parser import HTMLParser
 
-
+duplicate = []
 i = 0
 dict = {}
 val = 'abc'
@@ -29,7 +29,10 @@ class MyHTMLParser(HTMLParser):
     def handle_data(self, data):
         global i,dict,val
         if i == 39:
-            dict[data] = val
+            if dict.get(data) == None:
+                dict[data] = val
+            else:
+                duplicate.append({data : val})
         #print("Encountered some data  :", data , i)
 
 x = requests.get('https://docs-beta.opsramp.com/api/api-reference/agents-gateways/')
@@ -41,5 +44,13 @@ parser = MyHTMLParser()
 parser.feed(x.text)
 print(json.dumps(dict,indent=4))
 print("")
+print("Total APIs in dictionary : ",end="")
 print(len(dict))
 #the required first parameter of the 'get' method is the 'url':
+print("")
+
+for k in duplicate:
+    print(k)
+print("")
+print("Duplicate apis with same name : ", end="")
+print(len(duplicate))

@@ -9,50 +9,63 @@ val = []
 td_set = False
 tr_set = False
 allApi = {}
-j = ""
+code_set = False
+
+j = None
+
 
 class MyHTMLParser(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
-        global i,td_set,tr_set
+        global i,td_set,tr_set,code_set
         i += 1
         if tag == "td":
             td_set = True
         elif tag == "tr":
             tr_set = True
+        elif tag == "code":
+            code_set = True
 
     def handle_endtag(self, tag):
-        global i,td_set
+        global i,td_set,code_set
         i -= 1
         if tag == "td":
             td_set = False
+        elif tag == "code":
+            code_set = False
 
     def handle_data(self, data):
-        global i,store,j,val,td_set,tr_set
+        global i,store,j,val,td_set,tr_set,code_set
         if tr_set and td_set and i == 34:
             val.append(data)
             tr_set = False
-        if i == 31 and data == "URL":
+        if data == "URL":
             j = "URL"
-        elif i == 31 and data == "Sample URLs":
+        elif data == "Sample URLs":
             j = "Sample"
-        elif i == 31 and data == "Sample request":
+        elif data == "Sample request":
             j = "request"
-        elif i == 31 and data == "Sample response":
+        elif data == "Sample response":
             j = "response"
-        elif i == 32:
+        elif code_set and not j == None :
             if j == "response" or j == "request":
                 try:
                     store[j] = json.loads(data)
+                    code_set = False
                 except ValueError as e:
                     store[j] = data
+                    code_set = False
             elif j == "URL" or j == "Sample":
                 store[j] = data
-            j = ""
+                code_set = False
+            j = None
 
 for item in dict.keys():
     #global store,i
     store = {}
+    tr_set = False
+    td_set = False
+    code_set = False
     i = 0
     val = []
     x = requests.get('https://docs-beta.opsramp.com' + dict[item])
@@ -63,7 +76,7 @@ for item in dict.keys():
     store["href"] = dict[item]
     allApi[item] = store
 
-f = open("apiDictOutput.json" , "w")
+f = open("Output.json" , "w")
 f.write(json.dumps(allApi))
 f.close()
 print(json.dumps(allApi,indent=4))

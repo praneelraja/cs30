@@ -5,31 +5,37 @@ from html.parser import HTMLParser
 
 
 i = 0
-dict = {'Assign agent policy for resources': '/api/api-reference/alerts/schedule-maintenance-create-daily-post/', 'Assign agent profile for resources': '/api/api-reference/agents-gateways/agents-gateways-agent-profile-post/'}
+dict = {'Assign agent policy for resources': '/api/api-reference/tickets/problem-activity-log-get/', 'Assign agent profile for resources': '/api/api-reference/agents-gateways/agents-gateways-agent-profile-post/'}
 val = []
 store = {}
 td_set = False
 tr_set = False
-j = ""
+code_set = False
+
+j = None
 
 class MyHTMLParser(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
-        global i,td_set,tr_set
+        global i,td_set,tr_set,code_set
         i += 1
         print("Encountered a start tag:", tag, i)
         if tag == "td":
             td_set = True
         elif tag == "tr":
             tr_set = True
+        elif tag == "code":
+            code_set = True
         #pass
 
     def handle_endtag(self, tag):
-        global i,td_set
+        global i,td_set,code_set
         i -= 1
         print("Encountered an end tag :", tag, i)
         if tag == "td":
             td_set = False
+        elif tag == "code":
+            code_set = False
         #pass
     #def close():
         #print("close called")
@@ -37,21 +43,22 @@ class MyHTMLParser(HTMLParser):
 
     def handle_data(self, data):
 
-        global i,store,j,val,td_set,tr_set
+        global i,store,j,val,td_set,tr_set,code_set
         if tr_set and td_set and i == 34:
             val.append(data)
             tr_set = False
             #td_set = False
         print("Encountered data :", data, i)
-        if i == 31 and data == "URL":
+
+        if data == "URL":
             j = "URL"
-        elif i == 31 and data == "Sample URLs":
+        elif data == "Sample URLs":
             j = "Sample"
-        elif i == 31 and data == "Sample request":
+        elif data == "Sample request":
             j = "request"
-        elif i == 31 and data == "Sample response":
+        elif data == "Sample response":
             j = "response"
-        elif i == 32:
+        elif code_set and not j == None :
             #print("")
             #print(data.split('\t'))
             r = data
@@ -72,12 +79,17 @@ class MyHTMLParser(HTMLParser):
             if j == "response" or j == "request":
                 try:
                     store[j] = json.loads(r)
+                    code_set = False
                 except ValueError as e:
+                    print("we got an error" * 300)
                     store[j] = r
+                    code_set = False
             elif j == "URL" or j == "Sample":
                 store[j] = r
+                code_set = False
             #print(store[j])
-            j = ""
+            j = None
+
 
 store["table_parms"] = val
 
@@ -86,4 +98,5 @@ print(x.text)
 parser = MyHTMLParser()
 parser.feed(x.text)
 
+print("dictionary")
 print(json.dumps(store,indent=4))
