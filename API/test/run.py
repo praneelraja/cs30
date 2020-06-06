@@ -3,6 +3,8 @@ import json
 ip = open("owords.json","r")
 dict = json.loads(ip.read())
 
+chosen_words = []
+
 request_words = []
 response_words = []
 url_words = []
@@ -80,6 +82,7 @@ while True:
         print("")
         print("Pick a word that will need RBAC to access. All APIs using that word as parameter will be marked for review")
         word_chosen = input()
+        chosen_words.append(word_chosen)
         for item in dict.keys():
             if dict[item]["display"] == True:
                 if dict[item].get("req_words") != None:
@@ -92,6 +95,7 @@ while True:
         print("")
         print("Pick a word that will need RBAC to access. All APIs using that word as parameter will be marked for review")
         word_chosen = input()
+        chosen_words.append(word_chosen)
         for item in dict.keys():
             if dict[item]["display"] == True:
                 if dict[item].get("resp_words") != None:
@@ -104,6 +108,7 @@ while True:
         print("")
         print("Pick a word that will need RBAC to access. All APIs using that word as parameter will be marked for review")
         word_chosen = input()
+        chosen_words.append(word_chosen)
         for item in dict.keys():
             if dict[item]["display"] == True:
                 if dict[item].get("URL_words") != None:
@@ -116,6 +121,7 @@ while True:
         print("")
         print("Pick a word that will need RBAC to access. All APIs using that word as parameter will be marked for review")
         word_chosen = input()
+        chosen_words.append(word_chosen)
         for item in dict.keys():
             if dict[item]["display"] == True:
                 if dict[item].get("table_parms") != None:
@@ -125,25 +131,38 @@ while True:
         print("You did not choose from ['1', '2', '3', '4'] ")
 
 
-op1 = open("needRBAC.txt","w")
+op1 = open("needRBAC.txt","w",encoding="utf-8")
 op1.write("This file has list of APIs that need to be verified if they honor RBAC")
 op1.write("\n")
 for item in dict.keys():
     if dict[item]["display"] == False:
-        op1.write(item)
+        if dict[item].get("href") != None:
+            op1.write(f"{item},https://docs-beta.opsramp.com{dict[item]['href']},https://docs.opsramp.com{dict[item]['href']}")
+        else:
+            op1.write(item)
         op1.write("\n")
+
+op1.write("Above APIs use the following attributes")
+op1.write("\n")
+for n in chosen_words:
+    op1.write(n)
+    op1.write("\n")
+
 
 op1.write("End of a run")
 op1.write("\n")
 op1.write("\n")
 op1.close()
 
-op2 = open("filter.txt","w")
+op2 = open("filter.txt","w",encoding="utf-8")
 op2.write("This file has list of APIs that may need a manual check to see if they need RBAC")
 op2.write("\n")
 for item in dict.keys():
     if dict[item]["display"] == True:
-        op2.write(item)
+        if dict[item].get("href") != None:
+            op2.write(f"{item},https://docs-beta.opsramp.com{dict[item]['href']},https://docs.opsramp.com{dict[item]['href']}")
+        else:
+            op2.write(item)
         op2.write("\n")
 op2.write("End of a run")
 op2.write("\n")
