@@ -1,0 +1,377 @@
+This file has list of APIs that may need a manual check to see if they need RBAC
+Download agent for Linux
+Download agent installation script for Linux
+Download agent for Windows
+Get agent package for Linux
+Attach gateway to management profile
+Delete management profile
+Detach gateway from management profile
+Generating access token for gateway
+Get management profile
+Reconnect tunnel
+Registering gateway
+Search management profile
+Turning on/off proxy service on gateway
+Update management profile
+Alert status history
+Create alert correlation policy
+Create alert on a resource
+Create recurring schedule â monthly pattern
+Create rosters
+Create the first response policy
+Delete alert correlation policy
+Delete alert escalation policy
+Delete first response policy
+Delete roster
+Delete scheduled maintenance window
+Disable alert escalation policy
+Enable alert escalation policy
+Enable or disable first response policy
+End scheduled maintenance window
+Get alert correlation policies of a client
+Get alert correlation policy
+Get alert escalation policies by alert ID
+Get alert types
+Get alert views
+Get first response policies of client
+Get first response policy
+Get OAuth2 access token with client credentials
+Get resources of a schedule maintenance window
+Get roster
+Get schedule maintenance window
+Get sub alert types
+Resume scheduled maintenance window
+Search alert escalation policies
+Search scheduled maintenance windows
+Suspend schedule maintenance window
+Update a pending schedule maintenance window
+Update alert correlation policy
+Update first response policy
+Update roster
+Create category
+Create script
+Delete category
+Delete script
+Get categories
+Get output logs
+Get script
+Get scripts
+Update category
+Update script
+Create daily recurring data export
+Create monthly recurring data export
+Create on-demand data export
+Create weekly recurring data export
+Activate integration event
+Cloud Integration
+Collaboration Integrations
+Create integration event
+Create or update inbound Authentication
+Create or update installed integration base notifier
+Create or update installed integration mapping
+Deactivate integration event
+Delete discovery profile
+Delete integration event
+Disable integration
+Enable integration
+Get configurable email properties
+Get Events of an installed integration
+Get installed integration
+Get installed SSO integration
+Get integration event
+Get integration event placeholders
+Get integration mappable properties
+Get integration mappings
+Install custom integration
+Install email integration
+Install integration
+Install SSO integration
+Rescan discovery profile
+Search Available Integrations
+Search discovery profile
+Search installed integrations
+Uninstall Integration
+Uninstall SSO integration
+Update custom integration
+Update Installed Integrations
+Update installed SSO integration
+Update integration event
+Add comment
+Create article
+Create template
+Delete article
+Delete template
+Download article attachment
+Download article attachment (comments)
+Get article
+Get article activity log
+Get category
+Get list of articles
+Get list of categories
+Get list of comments
+Get list of templates
+Get sub-category
+Get template
+Restore category
+Search articles
+Share article
+Update article
+Update template
+Create metric type
+Get metric (time series) on a resource
+Get metric type
+Get metrics on a resource
+Save metrics on a resource
+Update metric type
+Assign templates to resource
+Create resource monitors
+Get assigned templates of resource
+Search templates
+Unassign templates from resource
+Activateor deactivate patch baseline
+Approve or disapprove patch
+Assign or unassign a baseline from patch compliance
+Assign or unassign device group from patch compliance
+Assign orunassign a patch baseline
+Create patch baseline
+Create patch compliance
+Create patch configuration
+Delete a patch qualification
+Delete patch baseline
+Delete patch compliance
+Delete patch configuration
+Get baseline details
+Get baseline details of compliance
+Get compliance of a resource and a baseline
+Get compliance of resource and baseline
+Get device group details of a compliance
+Get patch baselines
+Get patch compliance
+Get patch configuration
+Get patch details
+Get patch scan status of a device
+Get patch scan status of all devices of a missing job
+Get patches in a baseline
+Get patches on a resource
+Get patching status of a device
+Get patching status of all devices in a patch configuration
+Patch compliance introduction
+Run patch compliance
+Search patch configuration
+Search patches
+Update patch baseline
+Update patch compliance
+Update patch configuration
+Update patch feed
+Assign custom attributes to clients
+Assign custom attributes to service groups
+Assign resources as child to a device group
+Assign resources as child to a service group
+Create device groups
+Create device management policy
+Create impact dependency
+Create resource notes
+Create resources
+Create service group
+Create ustom attribute type and values of a tenant
+Custom attributes (assigned entities)
+Custom attributes (POST)
+Decommission a resource
+Decommission resources introduction
+Delete a site
+Delete custom attribute of a tenant
+Delete device group
+Delete device management policy
+Delete impact dependency
+Delete resource
+Delete resource by resource type
+Delete resource note
+Delete service group
+Device groups introduction
+Enable or disable resource decommission of client
+Get availability rule on a resource
+Get child resources and device groups
+Get child resources and service groups
+Get custom attribute types and values of a tenant
+Get custom attributes of a client
+Get custom attributes of a service group
+Get custom attributes types and values of a tenant
+Get decommissioned resource
+Get device group
+Get device management policies
+Get device management policy
+Get impact dependency
+Get latest antivirus definitions on resources
+Get minimal details of device groups
+Get minimal details of resource types
+Get minimal details of resources
+Get minimal details of service groups
+Get minimal site details
+Get resource
+Get resource applications
+Get resource availability
+Get resource note
+Get root level device groups
+Get root level service groups
+Get service availability
+Get service group
+Get site
+Get topology data by relationships
+Get warranties
+Impact dependency introduction
+Link service group
+Resources for DNS
+Resources for FTP
+Resources for HTTP basic authentication type
+Resources for HTTP NTLM authentication type
+Resources for HTTP OAuth2 authentication type
+Resources for HTTPS basic authentication type
+Resources for HTTPS NTLM authentication type
+Resources for HTTPS OAuth2 authentication type
+Resources for IMAP
+Resources for PING
+Resources for POP3
+Resources for SCRIPT
+Resources for SMTP
+Resources for SSL
+Resources for TCP
+Resources for UDP
+Run device management policy
+Search decommissioned resources
+Search device management policy
+Search Resource Notes
+Search resources
+Search sites
+Unassign child resources from a device group
+Unassign custom attribute from clients
+Unassign custom attribute from service groups
+Unassign resources as child from a service group
+Unlink a service group
+Update availability rule on a resource
+Update custom attribute type and add new values
+Update device groups
+Update device management policy
+Update resource
+Update resource notes
+Update service group
+Activate or deactivate client
+Activate user
+Add users to a user group
+Change password
+Create clients
+Create credential sets
+Create notes
+Create user
+Create user group
+Deactivate user
+Delete a credential set
+Delete a user group
+Delete note
+Delete role
+Get alert technologies
+Get channels
+Get client
+Get countries
+Get credential set
+Get credential sets
+Get login audit report
+Get minimal details of client credential sets
+Get minimal details of clients
+Get minimal details of users
+Get note
+Get partner details
+Get role
+Get t
+Get tenant NOCs
+Get user
+Get user group
+Get user groups
+Get users of a user group
+Remove users from a user group
+Search clients
+Search note
+Search permission sets
+Search roles
+Search user groups
+Search users
+Update clients
+Update credential set
+Update notes
+Update user
+Update user group
+Users and user groups introduction
+Add response to a change request
+Add response to a problem
+Add response to a service request
+Add response to a time bound request
+Add response to an incident
+Add response to task
+Close change request
+Close incident
+Close problem
+Close service request
+Close task
+Close time bound request
+Create business impact
+Create change request categories
+Create incident categories
+Create or update forward mapping
+Create or update reverse mapping
+Create problem categories
+Create service request categories
+Create urgency
+Custom forms introduction
+Download change request response attachment
+Download incident response attachment
+Download problem response attachment
+Download service request response attachment
+Download task response attachment
+Download time bound request response attachment
+Get activity log of a change request
+Get activity log of a problem
+Get activity log of a service request
+Get activity log of a task
+Get activity log of a time bound request
+Get activity log of an incident
+Get business impacts
+Get change request
+Get change request custom form
+Get change request responses
+Get custom field
+Get custom fields
+Get forward mapping details
+Get incident
+Get incident custom form
+Get incident responses
+Get notes
+Get problem
+Get problem custom form
+Get problem responses
+Get reverse mapping details
+Get service request
+Get service request custom form
+Get service request responses
+Get SLA policy
+Get status change reasons
+Get task
+Get task responses
+Get time bound request
+Get time bound responses
+Get time-bound request custom form
+Get urgencies
+Priority mapping introduction
+Search change requests
+Search incidents
+Search problems
+Search service requests
+Search SLA policies
+Search tasks
+Search time bound requests
+Update business impact
+Update change request category
+Update incident category
+Update problem category
+Update service request category
+Update urgency
+End of a run
+

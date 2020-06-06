@@ -1,0 +1,16 @@
+This file has list of APIs that need to be verified if they honor RBAC
+Assign agent policy for resources
+Assign agent profile for resources
+Create management profile
+Generating access token for gateway
+Get management profile
+Update management profile
+Acknowledge alert
+Add resources to a schedule maintenance window
+Alert status history
+Attach incident to an alert
+Create alert correlation policy
+Create alert escalation policy
+Create alert on a resource
+Create alerts on resources
+Create one-time schedule
