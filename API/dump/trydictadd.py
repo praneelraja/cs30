@@ -9,9 +9,9 @@ import json,re
 #    print("says type is dict")
 #dict["abc"]["def"].append("add")
 #print(json.dumps(dict,indent=4))
-dic = {"abc" : {"def" : "test", "new" : "value","lets" : "see"}}
-for item in dic["abc"]:
-    print(item)
+#dic = {"abc" : {"def" : "test", "new" : "value","lets" : "see"}}
+#for item in dic["abc"]:
+#    print(item)
 
 url = "POST https://{api-url}/api/v2/tenants/{clientId}/timeBoundRequests/{timeBountRequestId}"
 
@@ -21,3 +21,8 @@ r = re.sub(r"[/{}]", " ", url)
 print(r)
 r = r.split()
 print(r)
+
+dic = [{"abc" : "val"}, {"def" : "test"}, {"new" : "value"}, {"lets" : "see"}]
+for item in dic:
+    print(item)
+    print(item.keys(),

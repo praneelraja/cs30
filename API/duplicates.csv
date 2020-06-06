@@ -1,0 +1,13 @@
+This file has list of APIs that are erroneously labelled
+Get alert escalation policies by alert ID,https://docs.opsramp.com/api/api-reference/alerts/alert-escalation-policy-get/
+Get discovery profile,https://docs.opsramp.com/api/api-reference/integrations/cloud-discovery-profiles-get/
+Create category,https://docs.opsramp.com/api/api-reference/knowledge-base/knowledge-base-category-create-post/
+Delete category,https://docs.opsramp.com/api/api-reference/knowledge-base/knowledge-base-category-delete/
+Update category,https://docs.opsramp.com/api/api-reference/knowledge-base/knowledge-base-category-update-post/
+Get patches in a baseline,https://docs.opsramp.com/api/api-reference/patching/patch-management-baseline-patches-get/
+Run patch compliance,https://docs.opsramp.com/api/api-reference/patching/patch-configuration-run-post/
+Create notes,https://docs.opsramp.com/api/api-reference/tickets/ticket-notes-create-post/
+Delete note,https://docs.opsramp.com/api/api-reference/tickets/ticket-notes-note-delete/
+Get categories,https://docs.opsramp.com/api/api-reference/tickets/service-desk-settings-categories-get/
+Get note,https://docs.opsramp.com/api/api-reference/tickets/ticket-notes-note-get/
+Update notes,https://docs.opsramp.com/api/api-reference/tickets/ticket-notes-update-post/
