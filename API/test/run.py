@@ -131,7 +131,7 @@ while True:
         print("You did not choose from ['1', '2', '3', '4'] ")
 
 
-op1 = open("needRBAC.txt","w",encoding="utf-8")
+op1 = open("needRBAC.csv","w",encoding="utf-8")
 op1.write("This file has list of APIs that need to be verified if they honor RBAC")
 op1.write("\n")
 for item in dict.keys():
@@ -154,7 +154,7 @@ op1.write("\n")
 op1.write("\n")
 op1.close()
 
-op2 = open("filter.txt","w",encoding="utf-8")
+op2 = open("filter.csv","w",encoding="utf-8")
 op2.write("This file has list of APIs that may need a manual check to see if they need RBAC")
 op2.write("\n")
 for item in dict.keys():

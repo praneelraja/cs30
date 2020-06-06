@@ -1,16 +1,111 @@
 This file has list of APIs that need to be verified if they honor RBAC
-Assign agent policy for resources
-Assign agent profile for resources
-Create management profile
-Generating access token for gateway
-Get management profile
-Update management profile
-Acknowledge alert
-Add resources to a schedule maintenance window
-Alert status history
-Attach incident to an alert
-Create alert correlation policy
-Create alert escalation policy
-Create alert on a resource
-Create alerts on resources
-Create one-time schedule
+Create management profile,https://docs-beta.opsramp.com/api/api-reference/agents-gateways/management-profile-create-post/,https://docs.opsramp.com/api/api-reference/agents-gateways/management-profile-create-post/
+Acknowledge alert,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-acknowledge-alert-post/,https://docs.opsramp.com/api/api-reference/alerts/alerts-acknowledge-alert-post/
+Add resources to a schedule maintenance window,https://docs-beta.opsramp.com/api/api-reference/alerts/schedule-maintenance-add-resources-post/,https://docs.opsramp.com/api/api-reference/alerts/schedule-maintenance-add-resources-post/
+Alert status history,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-status-history-get/,https://docs.opsramp.com/api/api-reference/alerts/alerts-status-history-get/
+Attach incident to an alert,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-attach-incident-post/,https://docs.opsramp.com/api/api-reference/alerts/alerts-attach-incident-post/
+Create alert escalation policy,https://docs-beta.opsramp.com/api/api-reference/alerts/alert-escalation-policy-create-post/,https://docs.opsramp.com/api/api-reference/alerts/alert-escalation-policy-create-post/
+Create alerts on resources,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-create-alerts-post/,https://docs.opsramp.com/api/api-reference/alerts/alerts-create-alerts-post/
+Create one-time schedule,https://docs-beta.opsramp.com/api/api-reference/alerts/schedule-maintenance-create-onetime-post/,https://docs.opsramp.com/api/api-reference/alerts/schedule-maintenance-create-onetime-post/
+Create recurring schedule â daily pattern,https://docs-beta.opsramp.com/api/api-reference/alerts/schedule-maintenance-create-daily-post/,https://docs.opsramp.com/api/api-reference/alerts/schedule-maintenance-create-daily-post/
+Create recurring schedule â weekly pattern,https://docs-beta.opsramp.com/api/api-reference/alerts/schedule-maintenance-create-weekly-post/,https://docs.opsramp.com/api/api-reference/alerts/schedule-maintenance-create-weekly-post/
+Get alert,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-alert-get/,https://docs.opsramp.com/api/api-reference/alerts/alerts-alert-get/
+Get alert comments,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-alert-comments-get/,https://docs.opsramp.com/api/api-reference/alerts/alerts-alert-comments-get/
+Get alerts by an alert ID,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-alerts-by-alert-id-get/,https://docs.opsramp.com/api/api-reference/alerts/alerts-alerts-by-alert-id-get/
+Get resources of a schedule maintenance window,https://docs-beta.opsramp.com/api/api-reference/alerts/schedule-maintenance-resources-get/,https://docs.opsramp.com/api/api-reference/alerts/schedule-maintenance-resources-get/
+Get schedule maintenance window,https://docs-beta.opsramp.com/api/api-reference/alerts/schedule-maintenance-schedule-window-get/,https://docs.opsramp.com/api/api-reference/alerts/schedule-maintenance-schedule-window-get/
+Post alert action,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-alert-action-post/,https://docs.opsramp.com/api/api-reference/alerts/alerts-alert-action-post/
+Remove resources from a schedule maintenance window,https://docs-beta.opsramp.com/api/api-reference/alerts/schedule-maintenance-remove-resources-delete/,https://docs.opsramp.com/api/api-reference/alerts/schedule-maintenance-remove-resources-delete/
+Search alert occurrences,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-search-alert-occurrences-get/,https://docs.opsramp.com/api/api-reference/alerts/alerts-search-alert-occurrences-get/
+Update alert escalation policy,https://docs-beta.opsramp.com/api/api-reference/alerts/alert-escalation-policy-update-post/,https://docs.opsramp.com/api/api-reference/alerts/alert-escalation-policy-update-post/
+Update incident by an alert ID,https://docs-beta.opsramp.com/api/api-reference/alerts/alerts-update-incident-by-alertid-put/,https://docs.opsramp.com/api/api-reference/alerts/alerts-update-incident-by-alertid-put/
+Create daily recurring data export,https://docs-beta.opsramp.com/api/api-reference/exports/exports-recurring-daily-post/,https://docs.opsramp.com/api/api-reference/exports/exports-recurring-daily-post/
+Create on-demand data export,https://docs-beta.opsramp.com/api/api-reference/exports/exports-create-post/,https://docs.opsramp.com/api/api-reference/exports/exports-create-post/
+Create weekly recurring data export,https://docs-beta.opsramp.com/api/api-reference/exports/exports-recurring-weekly-post/,https://docs.opsramp.com/api/api-reference/exports/exports-recurring-weekly-post/
+Download article attachment,https://docs-beta.opsramp.com/api/api-reference/knowledge-base/knowledge-base-article-attachment-get/,https://docs.opsramp.com/api/api-reference/knowledge-base/knowledge-base-article-attachment-get/
+Get metrics on a resource,https://docs-beta.opsramp.com/api/api-reference/metrics/metrics-resource-get/,https://docs.opsramp.com/api/api-reference/metrics/metrics-resource-get/
+Save metrics on a resource,https://docs-beta.opsramp.com/api/api-reference/metrics/metrics-resource-save-post/,https://docs.opsramp.com/api/api-reference/metrics/metrics-resource-save-post/
+Assign templates to resource,https://docs-beta.opsramp.com/api/api-reference/monitoring/monitoring-templates-assign-template-post/,https://docs.opsramp.com/api/api-reference/monitoring/monitoring-templates-assign-template-post/
+Unassign templates from resource,https://docs-beta.opsramp.com/api/api-reference/monitoring/monitoring-templates-unassign-templates-delete/,https://docs.opsramp.com/api/api-reference/monitoring/monitoring-templates-unassign-templates-delete/
+Approve or disapprove patch,https://docs-beta.opsramp.com/api/api-reference/patching/patch-management-approve-disapprove-patch-post/,https://docs.opsramp.com/api/api-reference/patching/patch-management-approve-disapprove-patch-post/
+Assign or unassign devices from patch compliance,https://docs-beta.opsramp.com/api/api-reference/patching/patch-compliance-assign-unassign-devices-post/,https://docs.opsramp.com/api/api-reference/patching/patch-compliance-assign-unassign-devices-post/
+Get compliance of a resource and a baseline,https://docs-beta.opsramp.com/api/api-reference/patching/patch-management-resource-baseline-compliance-get/,https://docs.opsramp.com/api/api-reference/patching/patch-management-resource-baseline-compliance-get/
+Get compliance of resource and baseline,https://docs-beta.opsramp.com/api/api-reference/patching/patch-compliance-resource-and-baseline-get/,https://docs.opsramp.com/api/api-reference/patching/patch-compliance-resource-and-baseline-get/
+Get patch scan status of a device,https://docs-beta.opsramp.com/api/api-reference/patching/patch-management-device-patch-scan-status-get/,https://docs.opsramp.com/api/api-reference/patching/patch-management-device-patch-scan-status-get/
+Get patches on a resource,https://docs-beta.opsramp.com/api/api-reference/patching/patch-management-resource-patches-get/,https://docs.opsramp.com/api/api-reference/patching/patch-management-resource-patches-get/
+Get patching status of a device,https://docs-beta.opsramp.com/api/api-reference/patching/patch-management-device-patching-status-get/,https://docs.opsramp.com/api/api-reference/patching/patch-management-device-patching-status-get/
+Create resource notes,https://docs-beta.opsramp.com/api/api-reference/resource-management/resource-notes-create-post/,https://docs.opsramp.com/api/api-reference/resource-management/resource-notes-create-post/
+Create resources,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-create-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-create-post/
+Create service group,https://docs-beta.opsramp.com/api/api-reference/resource-management/service-group-create-post/,https://docs.opsramp.com/api/api-reference/resource-management/service-group-create-post/
+Create site,https://docs-beta.opsramp.com/api/api-reference/resource-management/sites-create-site-post/,https://docs.opsramp.com/api/api-reference/resource-management/sites-create-site-post/
+Create warranty,https://docs-beta.opsramp.com/api/api-reference/resource-management/device-warranty-create-post/,https://docs.opsramp.com/api/api-reference/resource-management/device-warranty-create-post/
+Decommission a resource,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-decommission-resource-put/,https://docs.opsramp.com/api/api-reference/resource-management/resources-decommission-resource-put/
+Delete resource,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-resource-delete/,https://docs.opsramp.com/api/api-reference/resource-management/resources-resource-delete/
+Delete resource by resource type,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-resource-by-resource-type-delete/,https://docs.opsramp.com/api/api-reference/resource-management/resources-resource-by-resource-type-delete/
+Get availability rule on a resource,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-resource-availability-rule-get/,https://docs.opsramp.com/api/api-reference/resource-management/resources-resource-availability-rule-get/
+Get custom attributes of a device,https://docs-beta.opsramp.com/api/api-reference/resource-management/custom-attributes-device-attributes-get/,https://docs.opsramp.com/api/api-reference/resource-management/custom-attributes-device-attributes-get/
+Get decommissioned resource,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-decommission-resource-get/,https://docs.opsramp.com/api/api-reference/resource-management/resources-decommission-resource-get/
+Get latest antivirus definitions on resources,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-latest-antivirus-defs-get/,https://docs.opsramp.com/api/api-reference/resource-management/resources-latest-antivirus-defs-get/
+Get minimal details of resources,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-minimal-details-get/,https://docs.opsramp.com/api/api-reference/resource-management/resources-minimal-details-get/
+Get resource,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-resource-get/,https://docs.opsramp.com/api/api-reference/resource-management/resources-resource-get/
+Get resource applications,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-resource-applications-get/,https://docs.opsramp.com/api/api-reference/resource-management/resources-resource-applications-get/
+Get resource availability,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-resource-availability-get/,https://docs.opsramp.com/api/api-reference/resource-management/resources-resource-availability-get/
+Get warranty,https://docs-beta.opsramp.com/api/api-reference/resource-management/device-warranty-get/,https://docs.opsramp.com/api/api-reference/resource-management/device-warranty-get/
+Resources for DNS,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-dns-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-dns-post/
+Resources for FTP,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-ftp-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-ftp-post/
+Resources for HTTP basic authentication type,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-http-basic-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-http-basic-post/
+Resources for HTTP NTLM authentication type,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-http-ntlm-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-http-ntlm-post/
+Resources for HTTP OAuth2 authentication type,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-http-oauth2-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-http-oauth2-post/
+Resources for HTTPS basic authentication type,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-https-basic-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-https-basic-post/
+Resources for HTTPS NTLM authentication type,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-https-ntlm-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-https-ntlm-post/
+Resources for HTTPS OAuth2 authentication type,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-https-oauth2-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-https-oauth2-post/
+Resources for IMAP,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-imap-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-imap-post/
+Resources for PING,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-ping-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-ping-post/
+Resources for POP3,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-pop3-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-pop3-post/
+Resources for SCRIPT,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-script-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-script-post/
+Resources for SMTP,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-smtp-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-smtp-post/
+Resources for SSL,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-ssl-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-ssl-post/
+Resources for TCP,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-tcp-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-tcp-post/
+Resources for UDP,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-synthetics-udp-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-synthetics-udp-post/
+Search Resource Notes,https://docs-beta.opsramp.com/api/api-reference/resource-management/resource-notes-search-get/,https://docs.opsramp.com/api/api-reference/resource-management/resource-notes-search-get/
+Search resources,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-search-get/,https://docs.opsramp.com/api/api-reference/resource-management/resources-search-get/
+Update availability rule on a resource,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-update-availability-resource-rule-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-update-availability-resource-rule-post/
+Update resource,https://docs-beta.opsramp.com/api/api-reference/resource-management/resources-update-post/,https://docs.opsramp.com/api/api-reference/resource-management/resources-update-post/
+Update resource notes,https://docs-beta.opsramp.com/api/api-reference/resource-management/resource-notes-update-post/,https://docs.opsramp.com/api/api-reference/resource-management/resource-notes-update-post/
+Update service group,https://docs-beta.opsramp.com/api/api-reference/resource-management/service-group-update-post/,https://docs.opsramp.com/api/api-reference/resource-management/service-group-update-post/
+Update site,https://docs-beta.opsramp.com/api/api-reference/resource-management/sites-update-site-post/,https://docs.opsramp.com/api/api-reference/resource-management/sites-update-site-post/
+Create roles,https://docs-beta.opsramp.com/api/api-reference/tenancy-access-controls/roles-create-post/,https://docs.opsramp.com/api/api-reference/tenancy-access-controls/roles-create-post/
+Get minimal details of device credential sets,https://docs-beta.opsramp.com/api/api-reference/tenancy-access-controls/credential-sets-minimal-device-details-get/,https://docs.opsramp.com/api/api-reference/tenancy-access-controls/credential-sets-minimal-device-details-get/
+Get user,https://docs-beta.opsramp.com/api/api-reference/tenancy-access-controls/users-user-get/,https://docs.opsramp.com/api/api-reference/tenancy-access-controls/users-user-get/
+Update roles,https://docs-beta.opsramp.com/api/api-reference/tenancy-access-controls/roles-update-post/,https://docs.opsramp.com/api/api-reference/tenancy-access-controls/roles-update-post/
+Create change request,https://docs-beta.opsramp.com/api/api-reference/tickets/change-request-create-post/,https://docs.opsramp.com/api/api-reference/tickets/change-request-create-post/
+Create incident,https://docs-beta.opsramp.com/api/api-reference/tickets/incident-create-post/,https://docs.opsramp.com/api/api-reference/tickets/incident-create-post/
+Create problem,https://docs-beta.opsramp.com/api/api-reference/tickets/problem-create-post/,https://docs.opsramp.com/api/api-reference/tickets/problem-create-post/
+Create service request,https://docs-beta.opsramp.com/api/api-reference/tickets/service-request-create-post/,https://docs.opsramp.com/api/api-reference/tickets/service-request-create-post/
+Create task,https://docs-beta.opsramp.com/api/api-reference/tickets/tasks-create-post/,https://docs.opsramp.com/api/api-reference/tickets/tasks-create-post/
+Create time bound request,https://docs-beta.opsramp.com/api/api-reference/tickets/time-bound-create-request-post/,https://docs.opsramp.com/api/api-reference/tickets/time-bound-create-request-post/
+Download change request response attachment,https://docs-beta.opsramp.com/api/api-reference/tickets/change-request-download-change-attachment-get/,https://docs.opsramp.com/api/api-reference/tickets/change-request-download-change-attachment-get/
+Download incident response attachment,https://docs-beta.opsramp.com/api/api-reference/tickets/incident-download-response-attachment-get/,https://docs.opsramp.com/api/api-reference/tickets/incident-download-response-attachment-get/
+Download problem response attachment,https://docs-beta.opsramp.com/api/api-reference/tickets/problem-download-response-attachment-get/,https://docs.opsramp.com/api/api-reference/tickets/problem-download-response-attachment-get/
+Download service request response attachment,https://docs-beta.opsramp.com/api/api-reference/tickets/service-request-download-response-attachment-get/,https://docs.opsramp.com/api/api-reference/tickets/service-request-download-response-attachment-get/
+Download task response attachment,https://docs-beta.opsramp.com/api/api-reference/tickets/tasks-response-attachment-download-get/,https://docs.opsramp.com/api/api-reference/tickets/tasks-response-attachment-download-get/
+Download time bound request response attachment,https://docs-beta.opsramp.com/api/api-reference/tickets/time-bound-download-response-attachment-get/,https://docs.opsramp.com/api/api-reference/tickets/time-bound-download-response-attachment-get/
+Update change request,https://docs-beta.opsramp.com/api/api-reference/tickets/change-request-update-post/,https://docs.opsramp.com/api/api-reference/tickets/change-request-update-post/
+Update incident,https://docs-beta.opsramp.com/api/api-reference/tickets/incident-update-post/,https://docs.opsramp.com/api/api-reference/tickets/incident-update-post/
+Update problem,https://docs-beta.opsramp.com/api/api-reference/tickets/problem-update-post/,https://docs.opsramp.com/api/api-reference/tickets/problem-update-post/
+Update service request,https://docs-beta.opsramp.com/api/api-reference/tickets/service-request-update-post/,https://docs.opsramp.com/api/api-reference/tickets/service-request-update-post/
+Update task,https://docs-beta.opsramp.com/api/api-reference/tickets/tasks-update-post/,https://docs.opsramp.com/api/api-reference/tickets/tasks-update-post/
+Update time bound request,https://docs-beta.opsramp.com/api/api-reference/tickets/time-bound-update-request-post/,https://docs.opsramp.com/api/api-reference/tickets/time-bound-update-request-post/
+Above APIs use the following attributes
+device
+devices
+resources
+integrationId
+alert
+devices
+permissions
+resources
+alertId
+deviceId
+End of a run
+
